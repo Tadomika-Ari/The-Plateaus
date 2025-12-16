@@ -1,13 +1,23 @@
 # 🏔️ The Plateaus
 
+
+
 <div align="center">
 
-![Terraria](https://img.shields.io/badge/Terraria-1.4-green? style=for-the-badge)
+Mod en cours de dévellopement...
+
+<\div>
+
+
+
+
+
+<div align="center">
+
+![Terraria](https://img.shields.io/badge/Terraria-1.4-green?style=for-the-badge)
 ![tModLoader](https://img.shields.io/badge/tModLoader-2024-blue?style=for-the-badge)
 ![C#](https://img.shields.io/badge/C%23-Latest-purple?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-
-*Un mod Terraria qui transforme votre aventure avec des plateaux mystérieux et des défis inédits*
 
 [Installation](#installation) • [Fonctionnalités](#fonctionnalités) • [Contribution](#contribution)
 
@@ -22,9 +32,7 @@
 ## ✨ Fonctionnalités
 
 ### 🗺️ Nouveaux Biomes
-- **Plateaux Célestes** - Des formations rocheuses flottantes avec une végétation unique
-- **Cavernes d'Altitude** - Systèmes de grottes suspendues remplies de trésors
-- **Forêts Éthérées** - Biomes forestiers aux propriétés magiques
+- **Les Plateaux** - 5 plateaux plus dangereux les uns que les autres
 
 ### ⚔️ Contenu
 - 🎯 **Nouveaux ennemis** adaptés aux environnements d'altitude
@@ -40,8 +48,8 @@
 ## 🚀 Installation
 
 ### Prérequis
-- Terraria (version 1.4 ou supérieure)
-- tModLoader installé et configuré
+
+A voir... mais surement par TModLoader
 
 ### Étapes d'installation
 
@@ -65,10 +73,7 @@
 
 ## 🎯 Démarrage Rapide
 
-1. Créez un nouveau monde ou chargez un monde existant
-2. Explorez vers les altitudes élevées
-3. Cherchez les formations de plateaux caractéristiques
-4. Préparez-vous à affronter de nouveaux défis ! 
+A venir...
 
 ## 🛠️ Développement
 
@@ -76,13 +81,7 @@ Ce mod est développé en C# pour tModLoader.
 
 ### Structure du Projet
 ```
-The-Plateaus/
-├── Content/          # Assets (textures, sons, etc.)
-├── Items/           # Définitions des objets
-├── NPCs/            # Ennemis et PNJs
-├── Tiles/           # Blocs et tuiles
-├── Biomes/          # Logique des biomes
-└── Projectiles/     # Projectiles et effets
+A venir...
 ```
 
 ### Contribuer
@@ -99,11 +98,11 @@ Les contributions sont les bienvenues !  Consultez [CONTRIBUTING.md](CONTRIBUTIN
 
 ## 🤝 Crédits
 
-Développé avec ❤️ par [Tadomika-Ari](https://github.com/Tadomika-Ari)
+Développé par [Tadomika-Ari](https://github.com/Tadomika-Ari)
 
 ### Remerciements
 - L'équipe tModLoader pour leurs outils excellents
-- La communauté Terraria pour leur soutien
+- Terraria pour leur jeu magnifique.
 
 ## 📄 License
 
@@ -113,7 +112,7 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de
 
 - 🐛 **Bugs** : [Ouvrir une issue](https://github.com/Tadomika-Ari/The-Plateaus/issues)
 - 💡 **Suggestions** : [Discussions](https://github.com/Tadomika-Ari/The-Plateaus/discussions)
-- 💬 **Discord** : [Rejoindre le serveur](#) *(à venir)*
+- **WIKI** : à venir...
 
 ---
 
