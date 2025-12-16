@@ -89,11 +89,8 @@ Les contributions sont les bienvenues !  Consultez [CONTRIBUTING.md](CONTRIBUTIN
 
 ## 📝 Roadmap
 
-- [ ] Phase 1 : Génération de base des plateaux
-- [ ] Phase 2 : Ajout des premiers ennemis
-- [ ] Phase 3 : Système d'équipements
-- [ ] Phase 4 :  Boss de plateau
-- [ ] Phase 5 : Intégration multijoueur optimisée
+- [ ] Phase 1 : Création de base (items, enemies, boss)
+- [ ] Phase 2 : Ajout du premier plateaux, biomes et boss
 
 ## 🤝 Crédits
 
