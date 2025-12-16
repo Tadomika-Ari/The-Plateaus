@@ -4,9 +4,9 @@
 
 <div align="center">
 
-Mod en cours de dévellopement...
+**Mod en cours de dévellopement...**
 
-<\div>
+
 
 
 
