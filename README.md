@@ -12,7 +12,6 @@
 
 
 
-<div align="center">
 
 ![Terraria](https://img.shields.io/badge/Terraria-1.4-green?style=for-the-badge)
 ![tModLoader](https://img.shields.io/badge/tModLoader-2024-blue?style=for-the-badge)
