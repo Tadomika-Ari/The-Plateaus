@@ -1,1 +1,16 @@
-This description will show up on the steam page, check out https://steamcommunity.com/comment/Guide/formattinghelp.
+Hello ! 
+
+This a mod with new dimension (five plateaus) with lot of boss and new equipement.
+Its an alpha of an alpha of an alpha. This mod its not finish !
+
+To be expecte for this mod :
+
+- 5 dimensions (5 plateaus)
+- Several bosses
+- Many equipement
+- And... a quest ?
+
+Github : https://github.com/Tadomika-Ari/The-Plateaus
+
+If you have advice or if ypu want to help me 
+Thanks to advance !
