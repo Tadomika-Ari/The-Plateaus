@@ -4,7 +4,7 @@
 
 <div align="center">
 
-**Mod en cours de dévellopement...**
+**Mod currently under development...**
 
 
 
@@ -18,7 +18,7 @@
 ![C#](https://img.shields.io/badge/C%23-Latest-purple?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-[Installation](#installation) • [Fonctionnalités](#fonctionnalités) • [Contribution](#contribution)
+[Installation](#installation) • [Features](#features) • [Contribution](#contribution)
 
 </div>
 
@@ -26,83 +26,68 @@
 
 ## 📖 À propos
 
-**The Plateaus** est un mod pour Terraria/tModLoader qui ajoute une nouvelle dimension à votre exploration.  Découvrez des plateaux majestueux, des biomes uniques et des secrets cachés dans les hauteurs du monde de Terraria.
+**The Plateaus** is a mod for Terraria/tModLoader that adds a new dimension to your exploration.  Discover majestic plateaus, unique biomes, and secrets hidden high above the world of Terraria.
 
-## ✨ Fonctionnalités
+## ✨ Features
 
-### 🗺️ Nouveaux Biomes
-- **Les Plateaux** - 5 plateaux plus dangereux les uns que les autres
+### 🗺️ New Biomes
+- **The Plateaus** - 5 plateaus, each more dangerous than the last
 
-### ⚔️ Contenu
-- 🎯 **Nouveaux ennemis** adaptés aux environnements d'altitude
-- 🛡️ **Équipements exclusifs** avec des bonus uniques
-- 💎 **Ressources rares** à découvrir dans les plateaux
-- 🎨 **Blocs de construction** pour créer des structures épiques
+### ⚔️ Content
+- 🎯 **New enemies** adapted to each environment
+- 🛡️ **Exclusive equipment** with unique bonuses
+- 💎 **Rare resources** to discover in the plateaus
+- 🎨 **Building blocks** to create epic structures
 
-### 🎮 Mécaniques de Jeu
-- Système de génération procédurale de plateaux
-- Nouvelles mécaniques d'escalade et de navigation
-- Événements spéciaux liés aux biomes
+### 🎮 Game Mechanics
+- Procedural level generation system
+- Special events linked to biomes
 
 ## 🚀 Installation
 
-### Prérequis
+### Prerequisite
 
-A voir... mais surement par TModLoader
+Just TModLoader
 
-### Étapes d'installation
+### Installation step
 
-1. **Via le Workshop tModLoader** (Recommandé)
+1. **With tModLoader** (Recommended)
    ```
-   1. Ouvrez tModLoader
-   2. Accédez au "Workshop"
-   3. Recherchez "The Plateaus"
-   4. Cliquez sur "Download"
-   5. Activez le mod dans "Mods"
+   1. Open tModLoader
+   2. Go to “Workshop”
+   3. Search for “The Plateaus”
+   4. Click “Download”
+   5. Enable the mod in “Mods”
    ```
+   
+## 🛠️ Development
 
-2. **Installation Manuelle**
-   ```bash
-   # Téléchargez la dernière release
-   # Placez le fichier . tmod dans : 
-   # Windows:  Documents/My Games/Terraria/tModLoader/Mods
-   # Mac: ~/Library/Application Support/Terraria/tModLoader/Mods
-   # Linux: ~/. local/share/Terraria/tModLoader/Mods
-   ```
+This mod is developed in C# for tModLoader. 
 
-## 🎯 Démarrage Rapide
+### Contribute
 
-A venir...
-
-## 🛠️ Développement
-
-Ce mod est développé en C# pour tModLoader. 
-
-### Structure du Projet
-```
-A venir...
-```
-
-### Contribuer
-
-Les contributions sont les bienvenues !  Consultez [CONTRIBUTING.md](CONTRIBUTING.md) pour plus de détails.
+Contributions are welcome!
 
 ## 📝 Roadmap
 
-- [ ] Phase 1 : Création de base (items, enemies, boss)
-- [ ] Phase 2 : Ajout du premier plateaux, biomes et boss
+- [ ] Phase 1 : Creation of first items (sword, scythe, mask, etc.)
+- [ ] Phase 2 : First NPC (quest, design, and spawn setting)
+- [ ] Phase 3 : First biome for phase 5, creation of tiles for environment
+- [ ] Phase 4 : First enemy (design, attack) and first boss
+- [ ] Phase 5 : First plateaus (with external library for dimension)
+- [ ] Phase 6 : Other plateaus and ending
 
-## 🤝 Crédits
+## 🤝 Credits
 
-Développé par [Tadomika-Ari](https://github.com/Tadomika-Ari)
+Dev by [Tadomika-Ari](https://github.com/Tadomika-Ari)
 
-### Remerciements
-- L'équipe tModLoader pour leurs outils excellents
-- Terraria pour leur jeu magnifique.
+### Acknowledgments
+- The tModLoader team for their excellent tools
+- Terraria for their magnificent game.
 
 ## 📄 License
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This project is licensed under the MIT License—see the [LICENSE](LICENSE) file for details.
 
 ## 📬 Contact & Support
 
@@ -114,7 +99,7 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de
 
 <div align="center">
 
-**Si vous appréciez ce mod, n'hésitez pas à lui donner une ⭐ ! **
+**If you like this mod, please give it a ⭐ ! **
 
 Made with 🎮 for the Terraria community
 
