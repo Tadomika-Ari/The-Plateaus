@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThePlateaus\\ThePlateaus.csproj": {}
+    "/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/ThePlateaus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThePlateaus\\ThePlateaus.csproj": {
+    "/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/ThePlateaus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThePlateaus\\ThePlateaus.csproj",
+        "projectUniqueName": "/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/ThePlateaus.csproj",
         "projectName": "ThePlateaus",
-        "projectPath": "C:\\Users\\User\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThePlateaus\\ThePlateaus.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThePlateaus\\obj\\",
+        "projectPath": "/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/ThePlateaus.csproj",
+        "packagesPath": "/home/lucas/.nuget/packages/",
+        "outputPath": "/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/lucas/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,12 +48,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

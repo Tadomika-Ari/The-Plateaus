@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X6Dl21MM9zs=",
+  "dgSpecHash": "lXLjQVZ2+gPeJ5wBrwBfI4sK3EQY7QuY3AkXQT7Wui275BHiE9y0/j88Jr5uVtndGbdlrvX9akRVzhqeZhBCGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThePlateaus\\ThePlateaus.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/ThePlateaus.csproj",
+  "expectedPackageFiles": [
+    "/home/lucas/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+  ],
   "logs": []
 }

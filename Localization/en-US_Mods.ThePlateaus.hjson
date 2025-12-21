@@ -10,4 +10,14 @@ Items: {
 			It's snowing on Mt.Fuji
 			'''
 	}
+
+	Despair: {
+		DisplayName: Despair
+		Tooltip: ""
+	}
+}
+
+Projectiles: {
+	Projectiles_test.DisplayName: Projectiles_test
+	ProjectileForDash.DisplayName: Projectile For Dash
 }
