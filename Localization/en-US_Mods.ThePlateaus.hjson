@@ -15,9 +15,26 @@ Items: {
 		DisplayName: Despair
 		Tooltip: ""
 	}
+
+	ExampleBar: {
+		DisplayName: Example Bar
+		Tooltip: ""
+	}
+
+	ExampleOre: {
+		DisplayName: Example Ore
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
 	Projectiles_test.DisplayName: Projectiles_test
 	ProjectileForDash.DisplayName: Projectile For Dash
 }
+
+WorldGen: {
+	ExampleOrePassMessage: Mods.ThePlateaus.WorldGen.ExampleOrePassMessage
+	BlessedWithExampleOreMessage: Mods.ThePlateaus.WorldGen.BlessedWithExampleOreMessage
+}
+
+Tiles.ExampleOreTile.MapEntry: Example Ore Tile
