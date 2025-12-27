@@ -25,6 +25,31 @@ Items: {
 		DisplayName: Example Ore
 		Tooltip: ""
 	}
+
+	DarkMask: {
+		Tooltip: ""
+		DisplayName: Dark Mask
+	}
+
+	DarkOre: {
+		DisplayName: Dark Ore
+		Tooltip: ""
+	}
+
+	DarkBar: {
+		Tooltip: ""
+		DisplayName: Dark Bar
+	}
+
+	DarkChestplat: {
+		Tooltip: ""
+		DisplayName: Dark Chestplat
+	}
+
+	RuneStone: {
+		Tooltip: ""
+		DisplayName: Rune Stone
+	}
 }
 
 Projectiles: {
@@ -37,4 +62,7 @@ WorldGen: {
 	BlessedWithExampleOreMessage: Mods.ThePlateaus.WorldGen.BlessedWithExampleOreMessage
 }
 
-Tiles.ExampleOreTile.MapEntry: Example Ore Tile
+Tiles: {
+	ExampleOreTile.MapEntry: Example Ore Tile
+	DarkOreTile.MapEntry: Dark Ore Tile
+}
