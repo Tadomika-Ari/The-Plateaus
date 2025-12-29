@@ -24,18 +24,18 @@ namespace ThePlateaus.Content.Items.Armors.DarkArmor
         {
             tooltips.Add(new TooltipLine(Mod, "DarkMaskBonus1", "Increases melee damage by 15%")
             {
-            OverrideColor = new Microsoft.Xna.Framework.Color(100, 255, 100) // Vert
+            OverrideColor = new Microsoft.Xna.Framework.Color(100, 255, 100)
             });
 
             tooltips.Add(new TooltipLine(Mod, "DarkMaskLore", "Archive: It is said that a man climbed the plateaus...\n But most say that this is a myth. However, this replica of his coat is proof of his past existence.")
             {
-            OverrideColor = new Microsoft.Xna.Framework.Color(150, 150, 150) // Gris (lore)
+            OverrideColor = new Microsoft.Xna.Framework.Color(150, 150, 150)
             });
         }
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient<DarkBar>(5);
+            recipe.AddIngredient<DarkBar>(20);
             recipe.AddTile(TileID.Anvils);
             recipe.Register();
         }

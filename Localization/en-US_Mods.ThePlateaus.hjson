@@ -50,6 +50,16 @@ Items: {
 		Tooltip: ""
 		DisplayName: Rune Stone
 	}
+
+	EnchantmentTableItem: {
+		Tooltip: ""
+		DisplayName: Enchantment Table Item
+	}
+
+	StrangeStone: {
+		Tooltip: ""
+		DisplayName: Strange Stone
+	}
 }
 
 Projectiles: {
@@ -60,6 +70,7 @@ Projectiles: {
 WorldGen: {
 	ExampleOrePassMessage: Mods.ThePlateaus.WorldGen.ExampleOrePassMessage
 	BlessedWithExampleOreMessage: Mods.ThePlateaus.WorldGen.BlessedWithExampleOreMessage
+	DarkOrePassMessage: Mods.ThePlateaus.WorldGen.DarkOrePassMessage
 }
 
 Tiles: {

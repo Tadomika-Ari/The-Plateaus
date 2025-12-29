@@ -28,14 +28,13 @@ namespace ThePlateaus.Content.Items.Weapons
 			Item.autoReuse = true;
 
 			Item.shoot = ModContent.ProjectileType<Projectiles_test>();
-			Item.shootSpeed = 12f; // <- IMPORTANT : sinon vitesse = 0, projectile immobile
+			Item.shootSpeed = 12f;
 		}
 
-		// Optionnel mais recommandé : tirer vers la souris au lieu d'une direction "par défaut"
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.DirtBlock, 10);
+			recipe.AddIngredient(ItemID.LunarBar, 12);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.Register();
 		}

@@ -18,8 +18,8 @@ namespace ThePlateaus.Content.Items.Ores
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient<DarkOre>(3); // 3 minerais = 1 lingot
-            recipe.AddTile(TileID.Furnaces); // Craft au furnace
+            recipe.AddIngredient<DarkOre>(3);
+            recipe.AddTile(TileID.Furnaces);
             recipe.Register();
         }
     }

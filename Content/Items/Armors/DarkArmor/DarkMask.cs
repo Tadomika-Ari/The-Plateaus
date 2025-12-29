@@ -34,7 +34,7 @@ namespace ThePlateaus.Content.Items.Armors.DarkArmor
 
             tooltips.Add(new TooltipLine(Mod, "DarkMaskLore", "Archive: Replica of an ancient mask belonging to a famous warrior whose name has been lost.")
             {
-            OverrideColor = new Microsoft.Xna.Framework.Color(150, 150, 150) // Gris (lore)
+            OverrideColor = new Microsoft.Xna.Framework.Color(150, 150, 150)
             });
         }
         public override void AddRecipes()

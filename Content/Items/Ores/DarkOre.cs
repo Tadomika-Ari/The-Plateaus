@@ -11,7 +11,7 @@ namespace ThePlateaus.Content.Items.Ores
             Item.width = 16;
             Item.height = 16;
             Item.maxStack = 9999;
-            Item.value = Item.sellPrice(silver: 5); // Prix de vente
+            Item.value = Item.sellPrice(silver: 5);
             Item.rare = ItemRarityID.Blue;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.useTurn = true;
@@ -20,7 +20,6 @@ namespace ThePlateaus.Content.Items.Ores
             Item.autoReuse = true;
             Item.consumable = true;
             
-            // Pour placer le tile en cliquant
             Item.createTile = ModContent.TileType<Content.Tiles.DarkOreTile>();
         }
     }

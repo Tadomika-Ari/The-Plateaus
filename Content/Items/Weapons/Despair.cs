@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework;
 using ThePlateaus.Content.Projectiles;
 using ThePlateaus.Content.Players;
 using Mono.CompilerServices.SymbolWriter;
+using ThePlateaus.Content.Items.Ores;
 
 namespace ThePlateaus.Content.Items.Weapons
 { 
@@ -68,12 +69,11 @@ namespace ThePlateaus.Content.Items.Weapons
 			return base.UseItem(player);
         }
 
-		// Optionnel mais recommandé : tirer vers la souris au lieu d'une direction "par défaut"
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.DirtBlock, 10);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddIngredient<DarkBar>(12);
+			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 		}
 	}
