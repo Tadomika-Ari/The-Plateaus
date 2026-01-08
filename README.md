@@ -84,6 +84,7 @@ Dev by [Tadomika-Ari](https://github.com/Tadomika-Ari)
 ### Acknowledgments
 - The tModLoader team for their excellent tools
 - Terraria for their magnificent game.
+- Use SubworldLibrary for dimension, thx !
 
 ## 📄 License
 
