@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
+using System.IO;
 
 namespace ThePlateaus.Content.Players
 {
@@ -10,6 +11,7 @@ namespace ThePlateaus.Content.Players
         public int comboCount = 0;
         public int comboTimer = 0;
         public int dashImmuneTimer = 0;
+        // File for combo for Despair
         public override void ResetEffects()
         {
             if (comboTimer > 0)

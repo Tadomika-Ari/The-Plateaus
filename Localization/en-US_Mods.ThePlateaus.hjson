@@ -60,6 +60,36 @@ Items: {
 		Tooltip: ""
 		DisplayName: Strange Stone
 	}
+
+	DarkLeggings: {
+		Tooltip: ""
+		DisplayName: Dark Leggings
+	}
+
+	DarkHelmt: {
+		Tooltip: ""
+		DisplayName: Dark Helmt
+	}
+
+	AwakedDarkMask: {
+		Tooltip: ""
+		DisplayName: Awaked Dark Mask
+	}
+
+	DemonicHorn: {
+		Tooltip: ""
+		DisplayName: Demonic Horn
+	}
+
+	AwakedDarkLeggings: {
+		Tooltip: ""
+		DisplayName: Awaked Dark Leggings
+	}
+
+	AwakedDarkChestplat: {
+		Tooltip: ""
+		DisplayName: Awaked Dark Chestplat
+	}
 }
 
 Projectiles: {

@@ -10,6 +10,7 @@ namespace ThePlateaus.Content.Projectiles
 {
     public class ProjectileForDash : ModProjectile
     {
+        // Dash Hitbox on projectile use by Despair
         public override string Texture => "Terraria/Images/Projectile_0";
         public override void SetDefaults()
         {

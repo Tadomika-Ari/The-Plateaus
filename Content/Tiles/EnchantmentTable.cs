@@ -19,7 +19,6 @@ namespace ThePlateaus.Content.Tiles
             TileObjectData.newTile.CopyFrom(TileObjectData.Style3x2);
             TileObjectData.newTile.CoordinateHeights = new[] { 16, 18 };
             TileObjectData.addTile(Type);
-
             AddMapEntry(new Color(120, 85, 60), Language.GetText("Enchantment Table"));
             DustType = DustID.WoodFurniture;
             AdjTiles = new int[] { TileID.Tables };

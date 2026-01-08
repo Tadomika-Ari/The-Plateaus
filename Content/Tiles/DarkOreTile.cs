@@ -32,7 +32,7 @@ namespace ThePlateaus.Content.Tiles
 			VanillaFallbackOnModDeletion = TileID.Silver;
 			HitSound = SoundID.Tink;
 			MineResist = 4f;
-			MinPick = 70;
+			MinPick = 110;
 		}
 		public override bool IsTileBiomeSightable(int i, int j, ref Color sightColor) {
 			sightColor = Color.Blue;

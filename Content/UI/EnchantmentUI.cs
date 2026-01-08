@@ -1,3 +1,4 @@
+using Humanizer;
 using Iced.Intel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,6 +10,8 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.UI;
 using ThePlateaus.Content.Items;
+using ThePlateaus.Content.Items.Armors.DarkArmor;
+using ThePlateaus.Content.Items.Armors.AwakedDarkArmor;
 using ThePlateaus.Content.Items.Runes;
 
 namespace ThePlateaus.Content.UI
@@ -20,6 +23,15 @@ namespace ThePlateaus.Content.UI
         private Item[] WeaponSlotArray;
         private Item[] RuneSlotArray;
         
+        // Dictionary for all awaked armor
+        private static readonly Dictionary<int, int> AwakenedItem = new Dictionary<int, int>
+        {
+            { ModContent.ItemType<DarkHelmt>(), ModContent.ItemType<AwakedDarkMask>() },
+            { ModContent.ItemType<DarkChestplat>(), ModContent.ItemType<AwakedDarkChestplat>() },
+            { ModContent.ItemType<DarkLeggings>(), ModContent.ItemType<AwakedDarkLeggings>() }
+        };
+
+        // Create UI
         public override void OnInitialize()
         {
             mainPanel = new UIPanel();
@@ -70,6 +82,7 @@ namespace ThePlateaus.Content.UI
             mainPanel.Append(ItemSlots2);
         }
 
+        // Enchantment System
         private void EnchantWeapon(UIMouseEvent evt, UIElement listeningElement)
         {
             Player player = Main.LocalPlayer;
@@ -83,7 +96,7 @@ namespace ThePlateaus.Content.UI
                 int statutEnchant = 0;
                 if (type == RuneType.None)
                 {
-                    Main.NewText("Rune with no stat ? Strange...", Color.Orange);
+                    Main.NewText("Rune with no power ? Strange...", Color.Orange);
                 }
                 switch (type)
                 {
@@ -95,7 +108,8 @@ namespace ThePlateaus.Content.UI
                         break;
                     case RuneType.Damage:
                         Main.NewText($"Weapon enchanted with +{value} and {type}");
-                        iteminslot.damage += value;
+                        var globalItemDamage = iteminslot.GetGlobalItem<EnchantedWeaponData>();
+                        globalItemDamage.bonusDamage += value;
                         statutEnchant += 1;
                         break;
                     case RuneType.Regeneration:
@@ -112,12 +126,23 @@ namespace ThePlateaus.Content.UI
                         break;
                     case RuneType.CritChance:
                         Main.NewText($"Weapon enchanted with +{value} and {type}");
-                        iteminslot.crit += value;
+                        var globalItemCritChance = iteminslot.GetGlobalItem<EnchantedWeaponData>();
+                        globalItemCritChance.bonusCritChance += value;
                         statutEnchant += 1;
                         break;
                     case RuneType.Awakening:
-                        Main.NewText($"Your weapon is now a true Weapon !");
-                        statutEnchant += 1;
+                        if (AwakenedItem.TryGetValue(iteminslot.type, out int awakenedType))
+                        {
+                            iteminslot.TurnToAir();
+                            iteminslot.SetDefaults(awakenedType);
+                            iteminslot.stack = 1;
+                            Main.NewText($"Your weapon is now a true Weapon !");
+                            statutEnchant = 1;
+                        }
+                        else
+                        {
+                            Main.NewText($"No Awaked weapon for this");
+                        }
                         break;
                 }
                 if (statutEnchant != 0)
@@ -129,7 +154,6 @@ namespace ThePlateaus.Content.UI
                 {
                     Main.NewText("Not Work ?");
                 }
-                
             }
             else
             {
@@ -147,7 +171,6 @@ namespace ThePlateaus.Content.UI
     {
         public UserInterface EnchantmentInterface;
         public EnchantmentUI enchantmentUI;
-
         public override void Load()
         {
             if (!Main.dedServ)

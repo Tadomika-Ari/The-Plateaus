@@ -1,16 +1,39 @@
-Hello ! 
+Lore:
 
-This a mod with new dimension (five plateaus) with lot of boss and new equipement.
-Its an alpha of an alpha of an alpha. This mod its not finish !
+Long ago, it was said that a powerful man lived on earth, fighting against corruption and carmine.
+But one day, he disappeared, leaving behind strange stones and letters, knowledge long lost. 
+The last thing he said was that he was going to practice ascension...
 
-To be expecte for this mod :
+_____________________________________________________________________________________________________
 
-- 5 dimensions (5 plateaus)
-- Several bosses
-- Many equipement
-- And... a quest ?
+Hello!
 
+I'm a beginning developer, and The Plateaus is my first mod !
+And it is still always in development!
+
+At this moment, the mod adds:
+
+- New Ore: Dark Ore. This is a beginning hardmode ore.
+- New Armor: Dark Armor, for the melee class.
+- New weapon: Dark Scythe Despair (crafted with Dark ingot)
+- And... New Mechanic?: Enchantment Table! Try to use a RuneStone to create a new combination for your stuff (More damage, health, defense...)
+and you can awaken weapons and armor for more stats, more powerful...
+
+I think it is so powerful... I'll try to patch this soon.
+
+But to finish this mod, I plan to:
+
+- Create more NPC (Quest ? Marchant ?)
+- System to date NPC
+- New enemy
+- New boss
+- And ... the objective of this mod, a new dimension: The Plateaus ! (Five different plateaus)
+
+Its a long journey... probably months or years to finish this.
+
+If you are an artist for sprites, or a developer to help, you're welcome!
 Github : https://github.com/Tadomika-Ari/The-Plateaus
 
-If you have advice or if ypu want to help me 
-Thanks to advance !
+Thanks to SubworldLibrary for creating a new dimension!
+
+Thanks in advance !

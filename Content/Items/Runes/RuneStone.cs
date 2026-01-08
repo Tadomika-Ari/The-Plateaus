@@ -11,6 +11,7 @@ using Steamworks;
 using Microsoft.Build.Tasks;
 using Terraria.DataStructures;
 using System.Linq.Expressions;
+using ThePlateaus.Content.Items.Ores;
 
 namespace ThePlateaus.Content.Items.Runes
 {
@@ -18,6 +19,7 @@ namespace ThePlateaus.Content.Items.Runes
     {
         public RuneType runeType = RuneType.None;
         public int statValue = 0;
+        public int ValueAwaked = 0;
         private bool hasGeneratedStats = false;
         public override void SetDefaults()
         {
@@ -27,6 +29,7 @@ namespace ThePlateaus.Content.Items.Runes
             Item.value = Item.sellPrice(silver: 5);
             Item.maxStack = 1;
         }
+        // All update compatible with cheat mod
         public override bool OnPickup(Player player)
         {
             if (!hasGeneratedStats && runeType == RuneType.None)
@@ -52,17 +55,18 @@ namespace ThePlateaus.Content.Items.Runes
                 hasGeneratedStats = true;
             }
         }
+        // Generator for stat
         private void GenerateRandomStats()
         {
             int roll = Main.rand.Next(100);
 
-            if (roll < 60)
+            if (roll < 70)
             {
                 Item.rare = ItemRarityID.Blue;
                 runeType = (RuneType)Main.rand.Next(1, 4);
                 statValue = Main.rand.Next(5, 15);
             }
-            else if (roll < 90 && roll > 60)
+            else if (roll < 90 && roll > 70)
             {
                 Item.rare = ItemRarityID.Purple;
                 runeType = (RuneType)Main.rand.Next(4, 6);
@@ -80,8 +84,10 @@ namespace ThePlateaus.Content.Items.Runes
                 Item.rare = ItemRarityID.Orange;
                 runeType = RuneType.Awakening;
                 statValue = 1;
+                ValueAwaked = 1;
             }
         }
+        // Text for describle
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             Color color = Color.White;
@@ -98,7 +104,7 @@ namespace ThePlateaus.Content.Items.Runes
                     text = $"+{statValue} Life Regeneration";
                     break;
                 case RuneType.Damage:
-                    color = new Color(200, 100, 255);
+                    color = new Color(200, 255, 100);
                     text = $"+{statValue}% Damage";
                     break;
                 case RuneType.CritChance:
@@ -111,7 +117,7 @@ namespace ThePlateaus.Content.Items.Runes
                     break;
                 case RuneType.Awakening:
                     color = new Color(255, 200, 50);
-                    text = "Awakens a weapon's true power";
+                    text = "Strange Stone use for awakens a weapon's or armor's true power";
                     break;
             }
 
@@ -123,6 +129,7 @@ namespace ThePlateaus.Content.Items.Runes
                 });
             }
         }
+        // Save Section
         public override void SaveData(TagCompound tag)
         {
             tag["runeType"] = (int)runeType;
@@ -144,19 +151,20 @@ namespace ThePlateaus.Content.Items.Runes
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.DirtBlock, 5);
+            recipe.AddIngredient<DarkBar>(2);
             recipe.AddTile(TileID.Anvils);
             recipe.Register();
         }
     }
+    // All type of rune
     public enum RuneType
     {
         None,
-        Health, // Rareté : Bleu
-        Damage, // Rareté : Bleu
-        Regeneration, // Rareté : Bleu
-        CritChance, // Rareté : Bleu
-        Defense, // Rareté : Violet
-        Awakening // Rareté : Or
+        Health,
+        Damage,
+        Regeneration,
+        CritChance,
+        Defense,
+        Awakening
     }
 }

@@ -6,12 +6,9 @@ using ThePlateaus.Content.Projectiles;
 
 namespace ThePlateaus.Content.Items.Weapons
 { 
-	// This is a basic item template.
-	// Please see tModLoader's ExampleMod for every other example:
-	// https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod
+	// Troll Weapon
 	public class BasicSword : ModItem
 	{
-		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.ThePlateaus.hjson' file.
 		public override void SetDefaults()
 		{
 			Item.damage = 200;

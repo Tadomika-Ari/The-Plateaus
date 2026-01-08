@@ -6,18 +6,16 @@ using ThePlateaus.Content.Projectiles;
 using ThePlateaus.Content.Players;
 using Mono.CompilerServices.SymbolWriter;
 using ThePlateaus.Content.Items.Ores;
+using ThePlateaus.Content.Items.Ressource;
 
 namespace ThePlateaus.Content.Items.Weapons
 { 
-	// This is a basic item template.
-	// Please see tModLoader's ExampleMod for every other example:
-	// https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod
+	// Scythe Despair
 	public class Despair : ModItem
 	{
-		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.ThePlateaus.hjson' file.
 		public override void SetDefaults()
 		{
-			Item.damage = 250;
+			Item.damage = 60;
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 40;
 			Item.height = 40;
@@ -32,6 +30,7 @@ namespace ThePlateaus.Content.Items.Weapons
 			
 		}
 
+		// Combo system + Dash
         public override bool? UseItem(Player player)
         {
             if (player.itemAnimation == player.itemAnimationMax)
@@ -39,7 +38,7 @@ namespace ThePlateaus.Content.Items.Weapons
 				var comboPlayer = player.GetModPlayer<ComboPlayer>();
 
 				comboPlayer.comboCount++;
-				comboPlayer.comboTimer = 60;
+				comboPlayer.comboTimer = 60; // 1 seconde
 
 				if (comboPlayer.comboCount >= 3)
 				{
@@ -73,6 +72,7 @@ namespace ThePlateaus.Content.Items.Weapons
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient<DarkBar>(12);
+			recipe.AddIngredient<DemonicHorn>(2);
 			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 		}

@@ -1,28 +1,33 @@
 using Terraria;
+using System;
 using Terraria.ID;
 using Terraria.ModLoader;
-using System.Collections.Generic;
 using ThePlateaus.Content.Items.Ores;
+using System.Collections.Generic;
 
 namespace ThePlateaus.Content.Items.Armors.DarkArmor
 {
-    [AutoloadEquip(EquipType.Body)]
-    public class DarkChestplat : ModItem
+    [AutoloadEquip(EquipType.Head)]
+    public class DarkHelmt : ModItem
     {
         public override void SetDefaults()
         {
-            Item.width = 18;
-            Item.height = 18;
+            Item.width = 40;
+            Item.height = 40;
+            Item.value = Item.sellPrice(gold : 15);
             Item.defense = 15;
-            Item.value = Item.sellPrice(gold: 5);
         }
-        public override void UpdateArmorSet(Player player)
+        public override void UpdateEquip(Player player)
         {
-            player.GetDamage(DamageClass.Melee) += 0.15f;
+            player.GetDamage(DamageClass.Melee) += 0.10f;
+        }
+        public override bool IsArmorSet(Item head, Item body, Item legs)
+        {
+            return false;
         }
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
-            tooltips.Add(new TooltipLine(Mod, "DarkMaskBonus1", "Increases melee damage by 15%")
+            tooltips.Add(new TooltipLine(Mod, "DarkMaskBonus1", "Increases melee damage by 10%")
             {
             OverrideColor = new Microsoft.Xna.Framework.Color(100, 255, 100)
             });
@@ -34,6 +39,5 @@ namespace ThePlateaus.Content.Items.Armors.DarkArmor
             recipe.AddTile(TileID.Anvils);
             recipe.Register();
         }
-
     }
 }

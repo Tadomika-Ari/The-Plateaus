@@ -10,6 +10,7 @@ namespace ThePlateaus.Content.Projectiles
 {
     public class Projectiles_test : ModProjectile
     {
+        // Just a troll projectile
         public override void SetDefaults()
         {
             Projectile.DamageType = DamageClass.Melee;
@@ -18,7 +19,7 @@ namespace ThePlateaus.Content.Projectiles
             Projectile.width = 8;
             Projectile.height = 8;
             Projectile.damage = 60;
-            Projectile.penetrate = 3;
+            Projectile.penetrate = 1;
             Projectile.friendly = true;
             Projectile.hostile = false;
         }

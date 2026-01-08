@@ -1,0 +1,12 @@
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/bin/Debug/net8.0/ThePlateaus.deps.json
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/bin/Debug/net8.0/ThePlateaus.dll
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/bin/Debug/net8.0/ThePlateaus.pdb
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/obj/Debug/net8.0/ThePlateaus.csproj.AssemblyReference.cache
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/obj/Debug/net8.0/ThePlateaus.GeneratedMSBuildEditorConfig.editorconfig
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/obj/Debug/net8.0/ThePlateaus.AssemblyInfoInputs.cache
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/obj/Debug/net8.0/ThePlateaus.AssemblyInfo.cs
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/obj/Debug/net8.0/ThePlateaus.csproj.CoreCompileInputs.cache
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/obj/Debug/net8.0/ThePlateaus.dll
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/obj/Debug/net8.0/refint/ThePlateaus.dll
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/obj/Debug/net8.0/ThePlateaus.pdb
+/home/lucas/.local/share/Terraria/tModLoader/ModSources/ThePlateaus/obj/Debug/net8.0/ref/ThePlateaus.dll
