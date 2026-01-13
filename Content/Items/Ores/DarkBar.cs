@@ -14,7 +14,6 @@ namespace ThePlateaus.Content.Items.Ores
             Item.value = Item.sellPrice(silver: 20);
             Item.rare = ItemRarityID.Blue;
         }
-
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();

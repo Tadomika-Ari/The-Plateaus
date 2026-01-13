@@ -69,7 +69,7 @@ namespace ThePlateaus.Content.Items.Runes
             else if (roll < 90 && roll > 70)
             {
                 Item.rare = ItemRarityID.Purple;
-                runeType = (RuneType)Main.rand.Next(4, 6);
+                runeType = (RuneType)Main.rand.Next(4, 7);
                 if (runeType == RuneType.CritChance)
                 {
                     statValue = Main.rand.Next(5, 15);
@@ -77,6 +77,10 @@ namespace ThePlateaus.Content.Items.Runes
                 if (runeType == RuneType.Defense)
                 {
                     statValue = Main.rand.Next(10, 20);
+                }
+                if (runeType == RuneType.ImmuneLava)
+                {
+                    statValue = 1;
                 }
             }
             else
@@ -114,6 +118,10 @@ namespace ThePlateaus.Content.Items.Runes
                 case RuneType.Defense:
                     color = new Color (200, 100, 255);
                     text = $"+{statValue} Defence";
+                    break;
+                case RuneType.ImmuneLava:
+                    color = new Color (200, 100, 255);
+                    text = "A stone who can't destroy on lava... Very strange";
                     break;
                 case RuneType.Awakening:
                     color = new Color(255, 200, 50);
@@ -165,6 +173,7 @@ namespace ThePlateaus.Content.Items.Runes
         Regeneration,
         CritChance,
         Defense,
+        ImmuneLava,
         Awakening
     }
 }

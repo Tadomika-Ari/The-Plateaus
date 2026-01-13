@@ -130,6 +130,12 @@ namespace ThePlateaus.Content.UI
                         globalItemCritChance.bonusCritChance += value;
                         statutEnchant += 1;
                         break;
+                    case RuneType.ImmuneLava:
+                        Main.NewText("Now you resist to the lava !");
+                        var GlobalItemLavaImmune = iteminslot.GetGlobalItem<EnchantedWeaponData>();
+                        GlobalItemLavaImmune.immuneLava = true;
+                        statutEnchant += 1;
+                        break;
                     case RuneType.Awakening:
                         if (AwakenedItem.TryGetValue(iteminslot.type, out int awakenedType))
                         {

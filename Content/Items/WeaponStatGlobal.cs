@@ -5,6 +5,7 @@ using Terraria.ModLoader;
 using Steamworks;
 using Terraria.ModLoader.IO;
 using Microsoft.Xna.Framework;
+using System;
 
 namespace ThePlateaus.Content.Items
 {
@@ -16,6 +17,7 @@ namespace ThePlateaus.Content.Items
         public int bonusDefense = 0;
         public int bonusDamage = 0;
         public int bonusCritChance = 0;
+        public bool immuneLava = false;
 
         // Update on equipe stat in accessory slot
         public override void UpdateEquip(Item item, Player player)
@@ -25,6 +27,7 @@ namespace ThePlateaus.Content.Items
             player.statDefense += bonusDefense;
             player.GetDamage(DamageClass.Generic) += bonusDamage / 100f;
             player.GetCritChance(DamageClass.Generic) += bonusCritChance / 100f;
+            player.lavaImmune |= immuneLava;
         }
         // Update in hold Item. For Healt check RuneHealtStat in player folder
         public override void HoldItem(Item item, Player player)
@@ -33,6 +36,7 @@ namespace ThePlateaus.Content.Items
             player.statDefense += bonusDefense;
             player.GetDamage(DamageClass.Generic) += bonusDamage / 100f;
             player.GetCritChance(DamageClass.Generic) += bonusCritChance / 100f;
+            player.lavaImmune |= immuneLava;
         }
         // Save section
         public override void SaveData(Item item, TagCompound tag)
@@ -42,6 +46,7 @@ namespace ThePlateaus.Content.Items
             tag["bonusDefense"] = bonusDefense;
             tag["bonusDamage"] = bonusDamage;
             tag["bonusCritChance"] = bonusCritChance;
+            tag["immuneLava"] = immuneLava;
         }
         public override void LoadData(Item item, TagCompound tag)
         {
@@ -50,6 +55,7 @@ namespace ThePlateaus.Content.Items
             bonusDefense = tag.GetInt("bonusDefense");
             bonusDamage = tag.GetInt("bonusDamage");
             bonusCritChance = tag.GetInt("bonusCritChance");
+            immuneLava = tag.GetBool("immuneLava");
         }
         public override void ModifyTooltips(Item item, List<Terraria.ModLoader.TooltipLine> tooltips)
         {
@@ -63,6 +69,8 @@ namespace ThePlateaus.Content.Items
                 tooltips.Add(new Terraria.ModLoader.TooltipLine(Mod, "BonusDamage", $"Bonus Damage : {bonusDamage} %"));
             if (bonusCritChance > 0)
                 tooltips.Add(new Terraria.ModLoader.TooltipLine(Mod, "BonusCritChance", $"Bonus Crit Chance : {bonusCritChance} %"));
+            if (immuneLava == true)
+                tooltips.Add(new Terraria.ModLoader.TooltipLine(Mod, "ImmuneLava", "Your immune vs lava"));
         }
     }
 }
