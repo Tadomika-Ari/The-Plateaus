@@ -12,19 +12,19 @@ using System.Collections.Generic;
 namespace ThePlateaus.Content.Items.Weapons
 { 
 	// Scythe Despair
-	public class Despair : ModItem
+	public class DespairAwaked : ModItem
 	{
 		public override void SetDefaults()
 		{
-			Item.damage = 50;
+			Item.damage = 60;
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 40;
 			Item.height = 40;
 			Item.useTime = 20;
 			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Swing;
-			Item.knockBack = 5;
-			Item.value = Item.buyPrice(gold: 1);
+			Item.knockBack = 6;
+			Item.value = Item.buyPrice(gold: 15);
 			Item.rare = ItemRarityID.Blue;
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
@@ -47,7 +47,7 @@ namespace ThePlateaus.Content.Items.Weapons
 					if (dashDirection.LengthSquared() < 0.001f)
 						dashDirection = Vector2.UnitX * player.direction;
 				
-					if (player.CheckMana(40, pay: true))
+					if (player.CheckMana(20, pay: true))
 					{
 						player.velocity = dashDirection * 15f;
 						comboPlayer.comboCount = 0;
@@ -71,20 +71,11 @@ namespace ThePlateaus.Content.Items.Weapons
 
 		public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
-            tooltips.Add(new TooltipLine(Mod, "Despair", "An ancient weapon belonging to a great warrior. But it seems less powerful than in the legends. ")
+            tooltips.Add(new TooltipLine(Mod, "DespairAwaked", "A true relic of forgotten legends. A weapon that has been completely awakened. You can even see runes engraved on the inside.")
             {
             OverrideColor = new Microsoft.Xna.Framework.Color(100, 255, 100)
             });
         }
 
-		public override void AddRecipes()
-		{
-			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient<DarkBar>(12);
-			recipe.AddIngredient<DemonicHorn>(2);
-			recipe.AddIngredient<OldDespair>(1);
-			recipe.AddTile(TileID.Anvils);
-			recipe.Register();
-		}
 	}
 }

@@ -90,11 +90,32 @@ Items: {
 		Tooltip: ""
 		DisplayName: Awaked Dark Chestplat
 	}
+
+	OldDespairItem: {
+		Tooltip: ""
+		DisplayName: Old Despair Item
+	}
+
+	OldDespair: {
+		Tooltip: ""
+		DisplayName: Old Despair
+	}
+
+	DespairAwaked: {
+		Tooltip: ""
+		DisplayName: Despair Awaked
+	}
+
+	OldDespairWeapon: {
+		Tooltip: ""
+		DisplayName: Old Despair Weapon
+	}
 }
 
 Projectiles: {
 	Projectiles_test.DisplayName: Projectiles_test
 	ProjectileForDash.DisplayName: Projectile For Dash
+	RuneRing.DisplayName: Rune Ring
 }
 
 WorldGen: {
@@ -106,4 +127,44 @@ WorldGen: {
 Tiles: {
 	ExampleOreTile.MapEntry: Example Ore Tile
 	DarkOreTile.MapEntry: Dark Ore Tile
+}
+
+NPCs: {
+	TheAncientWitch: {
+		TownNPCMood: {
+			DislikeNPC: I dislike {NPCName}.
+			LikeNPC: I like {NPCName}.
+			LoveNPC: I love {NPCName}.
+			DislikeBiome: I dislike {BiomeName}.
+			LikeBiome: I like {BiomeName}.
+			HateCrowded: I hate how crowded I am.
+			DislikeCrowded: I dislike how crowded I am.
+			LoveSpace: I love having so much space.
+			FarFromHome: I am too far from home.
+			NoHome: I hate not having a home.
+			Content: I am content.
+			HateNPC: I hate {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+		}
+
+		DisplayName: The Ancient Witch
+	}
+}
+
+Mods: {
+	ThePlateaus: {
+		Dialogue: {
+			TheAncientWitch: {
+				PartyGirlDialogue: Quelle fête, {0} !
+				Standard1: Je suis à la recherche de quelque chose...
+				Standard2: Souhaitez-vous m'aider, voyageur ?
+				Standard3: Je recherche une pierre...
+				Standard4: Elle mène quelque part...
+				CommonDialogue: Je suis en train de travailler...
+				RareDialogue: Il y avait il y a longtemps un homme...
+				TalkALot: Tu parles beaucoup trop...
+			}
+		}
+	}
 }

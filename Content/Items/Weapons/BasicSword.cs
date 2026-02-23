@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using ThePlateaus.Content.Projectiles;
+using ThePlateaus.Content.Projectiles.Projectiles_test;
 
 namespace ThePlateaus.Content.Items.Weapons
 { 

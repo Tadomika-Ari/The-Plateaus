@@ -13,6 +13,7 @@ using ThePlateaus.Content.Items;
 using ThePlateaus.Content.Items.Armors.DarkArmor;
 using ThePlateaus.Content.Items.Armors.AwakedDarkArmor;
 using ThePlateaus.Content.Items.Runes;
+using ThePlateaus.Content.Items.Weapons;
 
 namespace ThePlateaus.Content.UI
 {
@@ -26,9 +27,10 @@ namespace ThePlateaus.Content.UI
         // Dictionary for all awaked armor
         private static readonly Dictionary<int, int> AwakenedItem = new Dictionary<int, int>
         {
-            { ModContent.ItemType<DarkHelmt>(), ModContent.ItemType<AwakedDarkMask>() },
-            { ModContent.ItemType<DarkChestplat>(), ModContent.ItemType<AwakedDarkChestplat>() },
-            { ModContent.ItemType<DarkLeggings>(), ModContent.ItemType<AwakedDarkLeggings>() }
+            {ModContent.ItemType<DarkHelmt>(), ModContent.ItemType<AwakedDarkMask>() },
+            {ModContent.ItemType<DarkChestplat>(), ModContent.ItemType<AwakedDarkChestplat>() },
+            {ModContent.ItemType<DarkLeggings>(), ModContent.ItemType<AwakedDarkLeggings>() },
+            {ModContent.ItemType<Despair>(), ModContent.ItemType<DespairAwaked>()}
         };
 
         // Create UI

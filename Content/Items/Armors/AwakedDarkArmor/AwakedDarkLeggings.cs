@@ -21,7 +21,6 @@ namespace ThePlateaus.Content.Items.Armors.AwakedDarkArmor
         public override void UpdateEquip(Player player)
         {
             player.moveSpeed += 0.25f;
-            player.GetModPlayer<DashPlayer>().CanDash = true;
         }
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {

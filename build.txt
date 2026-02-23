@@ -1,4 +1,5 @@
 displayName = The Plateaus
 author = TadomiKa-Ari
 version = 0.1.2
-modReferences = SubworldLibrary
+modReferences = SubworldLibrary, StructureHelper
+dependencies = StructureHelper
