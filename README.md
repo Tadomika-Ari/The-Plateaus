@@ -71,7 +71,7 @@ Contributions are welcome!
 ## 📝 Roadmap
 
 - [X] Phase 1 : Creation of first items (sword, scythe, mask, etc.)
-- [ ] Phase 2 : First NPC (quest, design, and spawn setting)
+- [X] Phase 2 : First NPC (quest, design, and spawn setting)
 - [ ] Phase 3 : First enemy (design, attack) and first boss
 - [ ] Phase 4 : First biome for phase 5, creation of tiles for environment
 - [ ] Phase 5 : First plateaus (with external library for dimension)
