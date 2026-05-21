@@ -20,7 +20,6 @@ namespace ThePlateaus.Content.Structures
                 tasks.Insert(genIndex + 1, new PassLegacy("Old Despair Structure", GenerateOldDespair));
             }
         }
-
         private void GenerateOldDespair(GenerationProgress progress, GameConfiguration configuration)
         {
             progress.Message = "Placing Old Despair...";

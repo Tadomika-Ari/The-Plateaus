@@ -110,12 +110,36 @@ Items: {
 		Tooltip: ""
 		DisplayName: Old Despair Weapon
 	}
+
+	TheHalbarde: {
+		Tooltip: ""
+		DisplayName: The Halbarde
+	}
+
+	TrueBow: {
+		Tooltip: ""
+		DisplayName: True Bow
+	}
+
+	MoonFragment: {
+		Tooltip: ""
+		DisplayName: Moon Fragment
+	}
+
+	DebugObject: {
+		DisplayName: Debug Object
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
 	Projectiles_test.DisplayName: Projectiles_test
 	ProjectileForDash.DisplayName: Projectile For Dash
 	RuneRing.DisplayName: Rune Ring
+	TrueBowOrbital.DisplayName: True Bow Orbital
+	TrueBowArrow.DisplayName: True Bow Arrow
+	TsunamiOrbital.DisplayName: Tsunami Orbital
+	SpectreOrbital.DisplayName: Spectre Orbital
 }
 
 WorldGen: {
@@ -150,6 +174,27 @@ NPCs: {
 
 		DisplayName: The Ancient Witch
 	}
+
+	TheEmperor: {
+		TownNPCMood: {
+			Princess_LovesNPC: I like {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			HateNPC: I hate {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			LikeNPC: I like {NPCName}.
+			LoveNPC: I love {NPCName}.
+			DislikeBiome: I dislike {BiomeName}.
+			LikeBiome: I like {BiomeName}.
+			HateCrowded: I hate how crowded I am.
+			DislikeCrowded: I dislike how crowded I am.
+			LoveSpace: I love having so much space.
+			FarFromHome: I am too far from home.
+			NoHome: I hate not having a home.
+			Content: I am content.
+		}
+
+		DisplayName: The Emperor
+	}
 }
 
 Mods: {
@@ -166,5 +211,12 @@ Mods: {
 				TalkALot: Tu parles beaucoup trop...
 			}
 		}
+	}
+}
+
+InfoDisplays: {
+	TimerDisplay: {
+		DisplayName: Timer Display
+		"Timer test": Mods.ThePlateaus.InfoDisplays.TimerDisplay.Timer test
 	}
 }

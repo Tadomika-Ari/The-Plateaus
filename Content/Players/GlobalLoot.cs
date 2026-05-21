@@ -4,6 +4,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using ThePlateaus.Content.Items.Runes;
 using ThePlateaus.Content.Items.Ressource;
+using ThePlateaus.Content.Items.FragmentOfMoon;
 
 namespace ThePlateaus.Content.Players
 {
@@ -16,6 +17,12 @@ namespace ThePlateaus.Content.Players
             if (npc.type == NPCID.WallofFlesh)
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<StrangeStone>(), 2, 1, 1));
+            }
+
+            // For Moon Fragment
+            if (npc.type == NPCID.MoonLordCore)
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MoonFragment>(), 2, 1, 1));
             }
 
             // For Demon Horn
